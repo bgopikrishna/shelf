@@ -1,6 +1,8 @@
 {
-  "name": "with-typescript",
-  "version": "1.0.0",
+  "name": "shelf",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Gopi Krishna <gopiwayz@gmail.com>",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -8,15 +10,26 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.1.1",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
     "next": "latest",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "husky": "^4.3.0",
     "typescript": "4.0"
   },
-  "license": "MIT"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
