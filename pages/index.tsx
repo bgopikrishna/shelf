@@ -1,9 +1,11 @@
-import Layout from '../components/Layout'
+import AddBook from '../components/AddBook/AddBook'
+import Layout from '../components/Layout/Layout'
 
-const IndexPage = () => (
-  <Layout title="Shelf">
-    <p>Under Construction</p>
-  </Layout>
-)
-
+const IndexPage = () => {
+  return (
+    <Layout title="Shelf">
+      <AddBook />
+    </Layout>
+  )
+}
 export default IndexPage
