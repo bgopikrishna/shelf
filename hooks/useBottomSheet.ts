@@ -1,7 +1,11 @@
-import { useDisclosure } from '@chakra-ui/react'
-import { UseDisclosureReturn } from '@chakra-ui/react/dist/useDisclosure'
+import { useDisclosure, UseDisclosureProps } from '@chakra-ui/react'
 
-interface UseBottomSheetReturns extends UseDisclosureReturn {}
+type UseBottomSheetReturns {
+  isOpen: boolean,
+  onOpen: () => void,
+   onClose: () => void, 
+   onToggle: () => void
+}
 
 const useBottomSheet = (): UseBottomSheetReturns => {
   const { isOpen, onOpen, onClose, onToggle } = useDisclosure()

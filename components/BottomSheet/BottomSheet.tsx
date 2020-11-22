@@ -7,11 +7,11 @@ import {
   DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
-  IDrawer,
+  DrawerProps
 } from '@chakra-ui/react'
 import React, { ReactNode } from 'react'
 
-interface BottomSheetProps extends IDrawer {
+interface BottomSheetProps extends DrawerProps {
   showFooter?: boolean
   children: ReactNode
   headerTitle?: string

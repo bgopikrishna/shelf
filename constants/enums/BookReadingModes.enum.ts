@@ -1,5 +1,7 @@
-export enum BookReadingModes {
-    EBOOK = 'ebook',
-    PAPERBACK = 'paperback',
-    AUDIOBOOK = 'audiobook'
+enum BookReadingModes {
+  EBOOK = 'ebook',
+  PAPERBACK = 'paperback',
+  AUDIOBOOK = 'audiobook'
 }
+
+export default BookReadingModes

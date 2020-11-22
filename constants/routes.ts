@@ -1,16 +1,16 @@
 const ROUTES = [
   {
     label: 'Home',
-    to: '/',
+    to: '/'
   },
   {
     label: 'Shelves',
-    to: '/shelves',
+    to: '/shelves'
   },
   {
     label: 'Stats',
-    to: '/stats',
-  },
+    to: '/stats'
+  }
 ]
 
 export default ROUTES
