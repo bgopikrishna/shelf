@@ -3,12 +3,15 @@
 import React from 'react'
 import { CSSReset, ChakraProvider } from '@chakra-ui/react'
 import { AppProps } from 'next/app'
+import { SearchContextProvider } from '../context/SearchContext'
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <ChakraProvider>
       <CSSReset />
-      <Component {...pageProps} />
+      <SearchContextProvider>
+        <Component {...pageProps} />
+      </SearchContextProvider>
     </ChakraProvider>
   )
 }

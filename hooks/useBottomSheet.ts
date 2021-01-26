@@ -7,8 +7,10 @@ type UseBottomSheetReturns = {
   onToggle: () => void
 }
 
-const useBottomSheet = (): UseBottomSheetReturns => {
-  const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
+const useBottomSheet = (openByDefault = false): UseBottomSheetReturns => {
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure({
+    isOpen: openByDefault
+  })
 
   return { isOpen, onOpen, onClose, onToggle }
 }
