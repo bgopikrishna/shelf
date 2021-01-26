@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
 import BottomNavbar from './BottomNavbar'
 import Button from '../Buttons/Button'
@@ -7,10 +6,10 @@ import useDarkMode from '../../hooks/useDarkMode'
 
 type Props = {
   children?: ReactNode
-  title?: string
+  title: string
 }
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => {
+const Layout = ({ children, title }: Props) => {
   const { colorMode, toggleDarkMode } = useDarkMode()
   return (
     <div>
@@ -26,6 +25,10 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => {
       {children}
     </div>
   )
+}
+
+Layout.defaultProps = {
+  children: null
 }
 
 export default Layout

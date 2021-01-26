@@ -1,7 +1,6 @@
 import styled from '@emotion/styled'
-import Link from 'next/link'
 import React from 'react'
-import { COLORS } from '../../constants/enums/colors.enum'
+import COLORS from '../../constants/enums/colors.enum'
 import ROUTES from '../../constants/routes'
 import BottomNavLink from './BottomNavLink'
 

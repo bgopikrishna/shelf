@@ -1,13 +1,13 @@
 import React from 'react'
-import Link from 'next/link'
+import AddBook from '../components/AddBook/AddBook'
 import Layout from '../components/Layout/Layout'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-const IndexPage = () => {
+const AddBookPage = () => {
   return (
     <Layout title="Shelf">
-      <Link href="/addbook">Add Book</Link>
+      <AddBook />
     </Layout>
   )
 }
-export default IndexPage
+export default AddBookPage
